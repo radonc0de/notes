@@ -1,19 +1,45 @@
 \documentclass{article}
+\title{Calc 2 Complete Study Guide}
 \usepackage[margin=0.5in]{geometry}
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage[dvipsnames]{xcolor}
 \begin{document}
-    \section{Calc 2 Basics}
+    \section{Integral Basics}
         \color{BrickRed}
         \subsection*{5.3 Average Value}
             Integrals are pretty much an infinite amount of Riemann sums.
             If $f$ is integrable on $[a, b]$, then its average value (or mean) on $[a, b]$ is $\frac{1}{b-a}\int_{a}^{b}f(x)dx$.
-        \color{Black}
+        \color{Violet}
         \subsection*{5.5 U-Substitution}
-        \subsection*{5.6 }
-        \subsection*{6.1 }
-        \subsection*{6.2 }
+            Since $du$ can be substituted for $(/frac{du}{dx})dx$ u-substitution is possible.\\
+            Ex. Find $\int (x^3 + x)^5(3x^2 + 1)dx$
+            \begin{equation}
+                \begin{split}
+                    \int_{a}^{b} (x^3 + x)^5(3x^2 + 1)dx\\
+                    \int_{a}^{b} (u)^5(3x^2 + 1)dx\\
+                    u = x^3 + x\\
+                    \frac{du}{dx} = 3x^2 + 1 \\
+                    \int_{a^3 + a}^{b^3 + b} (u)^5(\frac{du}{dx})dx\\
+                    \int_{a^3 + a}^{b^3 + b} (u)^5du\\
+                    \int_{a^3 + a}^{b^3 + b} (u)^5du\\
+                    \frac{(b^3 + b)^6}{6} - \frac{(a^3 + a)^6}{6}
+            \end{split}
+                \end{equation}
+        \color{NavyBlue}
+        \subsection*{5.6 Area Between Curves}
+            If $f(x) \geq g(x)$ for $[a, b]$, then the area between both curves from $a$ to $b$ is equal to $A = \int_{a}^{b} [f(x) - g(x)] dx$. 
+        \color{ForestGreen}
+        \subsection*{6.1 Volume Using Integrals: Disk and Washer Methods}
+            The volume of a solid of integrable cross-sectional area $A(x)$ from $x=a$ to $x=b$ is equal to $\int_{a}^{b} A(x)dx$. \\
+            The volume of a disk created by rotating a function $R(x)$ around $y=0$ (the x-axis) for the same bounds is equal to $\int_{a}^{b} \pi [R(x)]^2 dx$. \\
+            The volume of a disk created by rotating a function $R(y)$ around $x=3$ for the same bounds is equal to $\int_{R((a)}^{R(b)} \pi [R(y)-3]^2 dy$. The reason 3 is subtracted from $R(y)$ is because the axis of rotation is closer to the area being rotated, so the radius of rotation will be less than if $x=0$.\\
+            The volume of a washer created by rotating the space between $R(x)$ and $r(x)$ around $y=1$ is equal to $\int_{a}^{b} \pi ([R(x) - 1]^2 - [r(x) - 1]^2) dx$. The reason a 1 is subtracted is because the axis of rotation is closer to the area being rotated, so the radius of rotation will be less than if $y=0$. \\
+            The volume of a washer created by rotating the space between R(y) and r(y) around x=0 (the y-axis) is equal to $\int_{R(a)}^{R(b)} \pi ([R(y)]^2 - [r(y)]^2) dx$. \\
+        \color{Orange}
+        \subsection*{6.2 Volumes Using Integrals: Shell Method}
+            *Summarize Shell Method*
+        \color{Black}
     \section{Integral Applications and Sections}
         \subsection*{8.2}
         \subsection*{8.3}

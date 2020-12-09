@@ -46,6 +46,7 @@
             1. Pick a $u$ to derive \\
             2. Pick a $dv$ to integrate \\
             3. $\int u * dv = u * v - \int v * du$ \\
+        \color{Cerulean}
         \subsection*{8.3 Trigonometric Integrals}
             $sincos$ integals $\rightarrow$  $sin^2 (x) + cos^2 (x) = 1$ \\
             $\int_{}^{} sin (x)cos^n(x)dx$ \\
@@ -67,20 +68,52 @@
                 & 5. sinx^2 = \frac{1-cos2x}{2} \\
                 & 6. cos^2 x = \frac{1+cos2x}{2} \\
             \end{flalign*}
-            \\
             Products of $sin$ and $cos$ \\
             \begin{flalign*}
                 & - sin(mx)sin(nx) = \frac{1}{2}(cos(m-n)x - cos(m+n)x) &\\
                 & - sin(mx)cos(nx) = \frac{1}{2}(sin(m-n)x + sin(m+n)x) \\
-                & - cos(mx)cos(nx) = \frac{1}{2}(cos(m-n)x + cos(m+n)x) \\
+                & - cos(mx)cos(nx) = \frac{1}{2}(cos(m-n)x + cos(m+n)x) 
             \end{flalign*}
         \subsection*{8.4 Trigonometric Substitutions}
-            1.
+            \begin{flalign*}
+                & 1. Case\quad 1: a^2 + x^2 &\\
+                & \rightarrow x = a tan \theta \\
+                & \rightarrow x = a sec^2 \theta d \theta \\
+                & \rightarrow a^2 + x^2 = a^2 + a^2 tan^2 \theta = a^2 (1 + tan^2 \theta) = a^2 sec^2 \theta \\
+                & 2. Case\quad 2: a^2 - x^2 \\
+                &  \rightarrow x = a sin \theta \\
+                & \rightarrow dx = a cos \theta  d \theta \\
+                & \rightarrow a^2 - x^2 = a^2 - a^2 sin^2 \theta = a^2 (1 - sin^2 \theta) = a^2 cos^2 \theta \\
+                & 3. Case\quad 3: x^2 - a^2 \\
+                & \rightarrow x = a sec \theta \\
+                & \rightarrow dx = a sec \theta tan \theta d \theta \\
+                & \rightarrow x^2 - a^2 = a^2 sec^2 \theta - a^2 = a^2 (sec^2 \theta - 1) = a^2 tan^2 \theta \\
+            \end{flalign*}
+        \color{Aquamarine}
         \subsection*{8.5 Partial Fraction Decomposition}
-            *Degree
+            *Degree on top must be less than degree on bottom, or long divide \\
+            \begin{itemize}
+                \item If there is a linear factor $\rightarrow \frac{A}{x+1} + \frac{B}{(x+1)^2}$ \\
+                \item If there is a quadratic factor $\rightarrow \frac{Ax+B}{x^2+bx+c} + \frac{Cx+D}{(x^2+bx+c)^2}$ \\
+                \item Set $\frac{f(x)}{g(x)}$ equal to the sum of its partial fractions by multiplying \\
+                \item Equate coefficients of powers of x to solve for variables
+            \end{itemize}
+            \begin{flalign*}
+                & \frac{-x+3}{x^2-9x+20} &\\
+                & \frac{-x+3}{(x-4)(x-5)} \\
+                & \frac{-x+3}{(x-4)(x-5)} = \frac{A}{x-4} + \frac{B}{x-5} \\
+                & \frac{-x+3}{(x-4)(x-5)}*(x-4)(x-5) = \frac{A}{x-4}(x-4)(x-5) + \frac{B}{x-5}(x-4)(x-5) \\
+                & -x+3 = A(x-5) + B(x-4) \\
+                & x=5: -2 = A(0) + B(1) \rightarrow So, B = -2\\
+                & x=4: -1 = A(-1) + B(0) \rightarrow So, A = 1\\
+                & \frac{-x+3}{x^2-9x+20} = \frac{1}{x-4} - \frac{2}{x-5} \\
+            \end{flalign*}
+        \color{RoyalBlue}
         \subsection*{Density Problems}
             \begin{itemize}
-                \item 1-dimensional
+                \item 1-dimensional $\rightarrow$ need length or mass ($\delta x$ meters or grams) \\
+                \item 2-dimensional $\rightarrow$ need area of a section (rectangle $bh$ where $h$ is $\delta x$) (or other shape) \\
+                \item 3-dimensional $\rightarrow$ need volume of a section (cylinder $= \pi r^2 h$ where $h$ is $\delta y$ / other shape) \\
             \end{itemize}
         \color{Black}
     \section{Sequences, Series, and Tests}

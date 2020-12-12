@@ -14,18 +14,16 @@
         \subsection*{5.5 U-Substitution}
             Since $du$ can be substituted for $(\frac{du}{dx})dx$, u-substitution is possible.\\
             Ex. Find $\int (x^3 + x)^5(3x^2 + 1)dx$.
-            \begin{equation}
-                \begin{split}
-                    \int_{a}^{b} (x^3 + x)^5(3x^2 + 1)dx\\
-                    \int_{a}^{b} (u)^5(3x^2 + 1)dx\\
-                    u = x^3 + x\\
-                    \frac{du}{dx} = 3x^2 + 1 \\
-                    \int_{a^3 + a}^{b^3 + b} (u)^5(\frac{du}{dx})dx\\
-                    \int_{a^3 + a}^{b^3 + b} (u)^5du\\
-                    \int_{a^3 + a}^{b^3 + b} (u)^5du\\
-                    \frac{(b^3 + b)^6}{6} - \frac{(a^3 + a)^6}{6}
-            \end{split}
-                \end{equation}
+            \begin{flalign*}
+                    &\int_{a}^{b} (x^3 + x)^5(3x^2 + 1)dx &\\
+                    &\int_{a}^{b} (u)^5(3x^2 + 1)dx\\
+                    &u = x^3 + x\\
+                    &\frac{du}{dx} = 3x^2 + 1 \\
+                    &\int_{a^3 + a}^{b^3 + b} (u)^5(\frac{du}{dx})dx\\
+                    &\int_{a^3 + a}^{b^3 + b} (u)^5du\\
+                    &\int_{a^3 + a}^{b^3 + b} (u)^5du\\
+                    &\frac{(b^3 + b)^6}{6} - \frac{(a^3 + a)^6}{6}
+            \end{flalign*}
         \color{NavyBlue}
         \subsection*{5.6 Area Between Curves}
             If $f(x) \geq g(x)$ for $[a, b]$, then the area between both curves from $a$ to $b$ is equal to $A = \int_{a}^{b} [f(x) - g(x)] dx$. 
@@ -186,12 +184,36 @@
                 \item $f$ is \textbf{decreasing} as the first derivative of $f$ is negative after $x=-2$. \\
             \end{itemize}
             Since $\lim_{b\to\infty} \int_{1}^{b} \frac{1}{(x+2)^2}dx = \frac{1}{3}$, a finite value, the original series converges. \\
-            8:03 \\
-
-
+        \color{Fuchsia}
         \subsection*{10.4 Comparison Tests (Direct \& Limit)}
+            Direct Comparison Test \\
+            If $0 \leq a_{n} \leq b_{n}$ then the following can be used: \\
+            If $\sum b_{n}$ converges, $\sum a_{n}$ converges \\
+            If $\sum a_{n}$ diverges, $\sum b_{n}$ diverges \\
+            \\
+            Limit Comparison Test \\
+            If $\lim_{n\to\infty} \frac{a_{n}}{b_{n}} = L$ $\rightarrow$ both converge or both diverge \\
+        \color{Black}
     \section{Sequences, Series, and Tests cont.}
+        \color{Emerald}
         \subsection*{10.5 Ratio/Root Tests \& Absolute Convergence}
+            Ratio Test: $\lim_{n\to\infty} \lvert \frac{a_{n} + 1}{a_{n}} \rvert$ \\
+            \begin{itemize}
+                \item $< 1 \rightarrow$ converges \\
+                \item $> 1 \rightarrow$ diverges \\
+                \item $= 1 \rightarrow$ inconclusive \\
+            \end{itemize}
+            Root Test: $\lim_{n\to\infty} \sqrt[n]{\lvert a_{n} \rvert}$ \\
+            \begin{itemize}
+                \item $< 1 \rightarrow$ converges \\
+                \item $> 1 \rightarrow$ diverges \\
+                \item $= 1 \rightarrow$ inconclusive \\
+            \end{itemize}
+            Absolute Value Test: \\
+            If $\sum \lvert a_{n} \rvert$ converges and $\sum a_{n}$ converges $\rightarrow$ absolutely convergent \\
+            If $\sum \lvert a_{n} \rvert$ diverges and $\sum a_{n}$ converges $\rightarrow$ conditionally convergent \\
+            **Watch OGT Video on Absolute Convergence for some more notes** \\
+        \color{Black}
         \subsection*{10.6 Alternating Series and Conditional Convergence}
         \subsection*{10.7 Power Series}
         \subsection*{10.8-9 Taylor and Maclaurin Series and Polynomials }

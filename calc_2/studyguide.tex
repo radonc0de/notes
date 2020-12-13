@@ -169,8 +169,23 @@
             Another useful strategy when finding the limit of a sequence is L'hopital's Rule, or taking the derivative of both the top and bottom of the equation and instead finding the limit of that. This helps to remove variables and simplify equations. \\
             L'hopital's Rule can be used when limits equal $\frac{0}{0}$ or $\frac{\infty}{\infty}$. \\
 
-        \color{Black}
+        \color{ForestGreen}
         \subsection*{10.2 Infinite Series}
+            An infinite series is simply the sum of an infinite sequence of numbers. \\
+            The $n$th-Term Test for Divergence \\
+            $\sum_{n=1}^{\infty} a_{n}$ diverges if $\lim_{n\to]infty} a_{n}$ fails to exist or is different from zero. \\
+            Combining Series \\
+            If $\sum a_{n} = A$ and $\sum b_{n} = B$ are convergent series, then: \\         
+            \begin{itemize}
+                \item Sum Rule: $\sum (a_{n}+b_{n}) = \sum a_{n} + \sum b_{n} = A + B$ \\
+                \item Difference Rule: $\sum (a_{n}-b_{n}) = \sum a_{n} - \sum b_{n} = A - B$ \\
+                \item Constant Multiple Rule: $\sum ka_{n} = k\sum a_{n} =  kA$ (any number $k$) \\
+            \end{itemize}
+            For Telescoping Series: \\
+            -Write out terms to find equation for Partial Sums $S_{n}$ \\
+            -Take limit of value containing $n$.
+            -If a number can be found, then the series converges.
+            -Partial fraction decomposition can also be used to get terms in Telescoping Series Form. \\
         \color{Brown}
         \subsection*{10.3 The Integral Test}
             To find $\sum_{n=1}^{\infty} \frac{1}{(n+2)^2}$, since $a_{n}$ can be described as a $f(n)$, and since $f$ is \textbf{positive}, \textbf{continuous}, and \textbf{decreasing} when \textbf{$x \geq 1$}, the Integral Test can be used. \\
@@ -213,11 +228,27 @@
             If $\sum \lvert a_{n} \rvert$ converges and $\sum a_{n}$ converges $\rightarrow$ absolutely convergent \\
             If $\sum \lvert a_{n} \rvert$ diverges and $\sum a_{n}$ converges $\rightarrow$ conditionally convergent \\
             **Watch OGT Video on Absolute Convergence for some more notes** \\
-        \color{Black}
-        \subsection*{10.6 Alternating Series and Conditional Convergence}
         \color{Mulberry}
+        \subsection*{10.6 Alternating Series and Conditional Convergence}
+            The Alternating Series Test: \\
+            The series $\sum_{n=1}^{\infty} (-1)^{n+1} u_{n} = u_{1} - u_{2} + u_{3} -u_{4} + ...$ converges if the following is satisifed: \\
+            \begin{itemize}
+                \item The $u_{n}$'s are all positive. \\
+                \item The $u_{n}$'s are eventually nonincreasing: $u_{n} \leq$ for all $n \leq N$, for some integer $N$.
+                \item $u_{n} \rightarrow 0$.
+            \end{itemize}
+        \color{Red}
         \subsection*{10.7 Power Series}
-            $f(x) = \frac{1}{1-x}$ can be written as the series $\sum_{n=0}{\infty} x^n$ \\
+            General Form: $\sum_{n=0}^{\infty} a_{n}(x-c)^n$ where $c$ is the center. \\
+            $g(x) = \sum_{n=0}^{\infty} ax^n = \frac{a}{1-x}$  \\
+            $f(x) = \frac{1}{1-x}$ can be written as the series $\sum_{n=0}^{\infty} x^n$ \\
+            To find center, set the value being raised to $n$ and solve for $x$. \\
+            Based on the result of $\lim_{n\to\infty} \lvert \frac{U_{n+1}}{U_{n}} \rvert$:
+            \begin{itemize}
+                \item $0 \rightarrow$ Series converges for all $x$-values $R=\infty$ $I=(-\infty, \infty)$ \\
+                \item $\infty \rightarrow$ Converges when $x=c$ $R=0$ $I={c}$ \\
+                \item $\frac{1}{R} \lvert x-c \rvert < 1$. Converges when $\lvert x-c \rvert  < R$. Diverges when $\lvert x-c \rvert > R$. $R=R$ $I=(-R+c, R+c)$. \\
+            \end{itemize}
         \color{Black}
         \subsection*{10.8-9 Taylor and Maclaurin Series and Polynomials }
     \section{Parametric Curves}

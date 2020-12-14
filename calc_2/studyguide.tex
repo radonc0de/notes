@@ -308,8 +308,12 @@
         \color{JungleGreen}
         \subsection*{11.2 Calculus of Parametric Curves}
             After finding $\frac{dy}{dt}$ and $\frac{dx}{dt}$, $\frac{dy}{dx}$ can be found by dividing $\frac{dy}{dt}$ by $\frac{dx}{dt}$. \\
-            To find second derivative: $\frac{d^2y}{dx^2} = \frac{\frac{dy'}{dt}}{\frac{dx}{dt}}$ \\
+            To find second derivative, find the derivative of the first derivative ($\frac{dy}{dx}$) and divide this by $\frac{dx}{dt}$. : $\frac{d^2y}{dx^2} = \frac{\frac{dy'}{dt}}{\frac{dx}{dt}}$. \\
+            A positive second derivative means the curve is concave up, while a negative second derivative means the curve is concave down. \\
             To find the length of curve $C$ defined parametrically by $x=f(t)$ and $y=g(t)$, $a \leq t \leq b$, where $f'$ and $g'$ are continuous and not simultaneously zero on $[a, b]$, and $C$ is traversed exactly once as $t$ increase from $t=a$ to $t=b$, then the length of $C$ can be found to be $\int_{a}^{b} \sqrt{[f'(t)]^2 + [g'(t)]^2} dt$ \\
+            Area bounded by parametric equation $(f(t), g(t))$ derivation: \\
+            $A = \int_{a}^{b} f(x) dx$ \\
+            Since $f(x) = y$, $y = g(t)$, and $dx = f'(t)dt$, the equation can be rewritten as $A = \int_{\alpha}^{\beta} g(t) f'(t) dt$, where $\alpha$ and $\beta$ are $t$-values. \\
             Surface Area: \\
             Revolution around the $x$-axis $(y \geq 0)$: $S = \int_{a}^{b} 2 \pi y \sqrt{[f'(t)]^2 + [g'(t)]^2} dt$ \\
             Revolution around the $y$-axis $(x \geq 0)$: $S = \int_{a}^{b} 2 \pi x \sqrt{[f'(t)]^2 + [g'(t)]^2} dt$ \\

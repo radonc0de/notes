@@ -326,12 +326,13 @@
         \color{OliveGreen}
         \subsection*{11.4 Graphing Polar Coordinate Equations}
             To find the slope of a polar curve $r=f(\theta)$, the following equation must be used: $\frac{dy}{dx} = \frac{f'(\theta)sin\theta + f(\theta)cos\theta}{f'(\theta)cos\theta - f(\theta)sin\theta}$. Notice that when $f(\theta) = 0$, $\frac{dy}{dx} = tan \theta$.
-        \color{Black}
+        \color{BurntOrange}
         \subsection*{11.5 Areas and Lengths in Polar Coordinates}
-        \color{Aquamarine}
+            For the length of a polar curve, $L = \int_{\alpha}^{\beta} \sqrt{r^2 + (\frac{dr}{d\theta})^2} d\theta$ can be used for the interval $\alpha$ to $\beta$. For finding the area of polar coordinates, $A = \int_{\alpha}^{\beta} \frac{1}{2} r^2 d \theta$ where $\alpha$ and $\beta$ are angular bound that can be found by setting $r$ to $0$. 
+        \color{NavyBlue}
         \subsection*{Complex Numbers}
             Standard form = $a + bi$. $a$ is real portion, $bi$ is imaginary. 
-            To graph: 3 units to the right, imaginary is 4 so 4 units up. To calculate absolute value, $/abs{a+bi} = /sqrt{a^2 + b^2}$\\
+            To graph: 3 units to the right, imaginary is 4 so 4 units up. This is called an Argand Diagram. To calculate absolute value, or \textbf{modulus}, $\lvert a+bi \rvert = \sqrt{a^2 + b^2}$\\
             For -5 + 12i: \\
             Graph 5 units to the left, and up 12 units. \\
             $\lvert {-5 + 12i}\rvert = \sqrt{(-5)^2 + 12^2}$ \\
@@ -339,15 +340,12 @@
             $\lvert {-5 + 12i}\rvert = \sqrt{169}$ \\
             $\lvert {-5 + 12i}\rvert = 13$ \\
             \\
-            An example of how a square root of negative looks: $\sqrt{-80} =  i * \sqrt{16} * \sqrt{5} = 4i \sqrt{5}$
-            \begin{equation}
-                \begin{split}
-                    i = \sqrt{-1} \\
-                    i^2 = -1 \\
-                    i^3 = -i \\
-                    i^4 = 1 \\
-                \end{split}
-            \end{equation}
+            For addition and subtraction of complex numbers, simply add or subtract the real and imaginary parts separately: $(5 + 4i) + (3 -7i) = 8 - 3i$. For multiplying a real number and imaginary number, apply the distributive property: $5 * (6 - 7i) = 30 - 35i$. For multiplying two complex numbers, make sure to FOIL: $(1-i)*(-3+2i)=-3+2i+3i-2i^2 = -1 +5i$. The \textbf{complex conjucate} $(\overline{z})$ of a complex number has the same real part but opposite imaginary part: the conjucate of $5 + 5i$ is $5 - 5i$. The rectangular form of numbers such as $\frac{1}{i}$ can be found by multiplying and dividing by the complex conjucate. Therefore when dividing complex number $z_{1}$ by $z_{2}$, $\frac{z_{1}}{z_{2}} = z_{1} * \frac{\overline{z_{2}}}{\lvert z_{2} \rvert ^2}$.\\
+            An example of how a square root of negative looks: $\sqrt{-80} =  i * \sqrt{16} * \sqrt{5} = 4i \sqrt{5}$ \\
+                    $i = i^5 = \sqrt{-1} \\
+                    i^2 = i^6 = -1 \\
+                    i^3 = i^7 = -i \\
+                    i^4 = i^8 = 1$ \\
             Idea: Associate polar coordinates to complex numbers \\
             $z = x+iy$ \\
             $r = \lvert z \rvert = \sqrt{x^2 + y^2}$ \\
@@ -357,5 +355,9 @@
             Find polar coordinates of $z = -2\sqrt{2} + 2\sqrt{2}i$\\
             $r = \lvert z \rvert = \sqrt{(-2\sqrt{2})^2  + (2\sqrt{2})^2} = \sqrt{16} = 4$ \\
             Since $x \leq 0$, $\theta =  arctan \frac{y}{x} + \pi = \frac{3\pi}{4} $ \\
-            Polar Coordinates = $(4cos\frac{3\pi}{4},4sin\frac{3\pi}{4})$
+            Polar Coordinates = $(4cos\frac{3\pi}{4},4sin\frac{3\pi}{4})$ \\
+            \textbf{Euler's Formula} for any $\theta$ is $e^{i\theta} = cos \theta + i sin \theta$. Using this, the \textbf{exponential form} of a complex number with polar coordinates $(r, \theta)$ is $z = \lvert z \rvert e^{i\theta}$. \\
+            Therefore, $z_{1}z_{2}=r_{1}r_{2}(cos(\theta_{1}+\theta_{2})+isin(\theta_{1}+\theta_{2}))$. This also shows that $\frac{z_{1}}{z_{2}} = \frac{r_{1}}{r_{2}} e^{i(\theta_{1}-\theta_{2})}$.
+            De Moivre's Formula: If $z \neq 0$ has polar coordinates $(\lvert z \rvert, \theta)$, for any integer $n \geq 0$: $z^n = \lvert z \rvert ^n e^{in\theta} = \lvert z \rvert ^n (cos (n\theta) + i sin (n\theta))$ and $z^{-n} = \lvert z \rvert ^{-n} e^{-in\theta} = \lvert z \rvert ^{-n} (cos (n\theta) - i sin(n\theta))$. So, if $z = cos \theta + i sin \theta$, $(\lvert z \rvert = 1)$, then $(cos \theta + i sin \theta)^n = (cos (n\theta) + i sin (n\theta))$. For roots of complex numbers, $z_{k} = \sqrt[n]{r} [cos \frac{\theta + 2\pi k}{n} + i sin \frac{\theta + 2 \pi k}{n}]$ where $k$ is the amount of roots. 
+
 \end{document}
